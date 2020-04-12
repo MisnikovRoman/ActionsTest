@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build with tests
-      run: xcodebuild build test ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -project GithubActionsExample/GithubActionsExample.xcodeproj -scheme "GithubActionsExample"	-sdk iphonesimulator -destination "platform=iOS Simulator,OS=latest,name=iPhone 11 Pro Max" | xcpretty
+      run: xcodebuild build test ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -project GithubActionsExample.xcodeproj -scheme "GithubActionsExample"	-sdk iphonesimulator -destination "platform=iOS Simulator,OS=latest,name=iPhone 11 Pro Max" | xcpretty
